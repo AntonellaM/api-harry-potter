@@ -1,0 +1,24 @@
+.spell-card {
+    @extend .card;
+    height: auto;
+
+    &__title h2 {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 5px;
+        font-family: $font-general;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    &__info {
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid lightgrey;
+        padding: 8px;
+    }
+
+    &__hidden {
+        display: none;
+    }
+}

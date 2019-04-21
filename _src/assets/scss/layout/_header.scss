@@ -1,0 +1,102 @@
+.header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../../../assets/images/wallpaper.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    
+    .search__input {
+        height: 35px;
+        padding: 8px;
+        font-size: 20px;
+        width: 40vw;
+        border-radius: 5px;
+        margin: 15px;
+        font-family: $font-general;
+
+    }
+}
+
+.trigger-button {
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            
+    &__icon {
+        color: grey;
+    }
+}
+
+.close-button {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    position: fixed;
+    top: 0;
+    left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left ease 0.8s;
+
+            
+    &__icon {
+        color: grey;
+    }
+}
+
+.nav {
+    background-color: #fff;
+    color: black;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: left ease 0.8s;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+       
+        &--item {
+            height: 35px;
+            border-top: 1px solid lightgrey;
+            width: 100%;
+            padding: 8px 8px;
+            cursor: pointer;
+            font-family: $font-general;
+            font-size: 16px; 
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;           
+    }
+}
+
+.nav__open {
+    transform: translateX(200px);
+    z-index: 2;
+}
+
+.nav__open--button {
+    transform: translateX(250px);
+}
