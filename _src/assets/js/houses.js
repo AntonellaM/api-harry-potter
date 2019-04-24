@@ -15,7 +15,7 @@ function printHouse(house) {
   const houseResult = document.createTextNode(house);
   const quoteEl = document.createElement('p');
   const imgEl = document.createElement('div');
-  const url = `url('../../../assets/images/${house}.jpg')`;
+  const url = `url('assets/images/${house}.jpg')`;
   imgEl.setAttribute('style', `background-image: ${url}`);
   imgEl.classList.add('modal__photo');
 

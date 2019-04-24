@@ -45,7 +45,6 @@ function createCardSpell(spell) {
   spellInfoEl.classList.add('spell-card__hidden');
 
   const arraySpells = document.querySelectorAll('.spell-card__title');
-
   for (const spell of arraySpells) {
     spell.addEventListener('click', spellCardClickHandler);
   }
@@ -55,9 +54,9 @@ function createCardSpell(spell) {
 fetch(`https://www.potterapi.com/v1/spells/?key=${key}`)
   .then(response => response.json())
   .then(function (spells) {
-    for (const spell of spells) {
-      createCardSpell(spell);
+
+    for (let i = 0; i < spells.length -1; i++) {
+      createCardSpell(spells[i]);
     }
-    return spells;
   });
 

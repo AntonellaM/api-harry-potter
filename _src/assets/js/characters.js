@@ -21,7 +21,7 @@ function createFrontCard(person) {
   const titleEl = document.createElement('h2');
   const title = document.createTextNode(fullName);
 
-  let url = `url('../../../assets/images/${firstName}.jpg'), url('../../../assets/images/${person.deathEater}.jpg'), url('../../../assets/images/${person.house}.jpg'), url('../../../assets/images/${person.bloodStatus}.jpg'), url('../../../assets/images/default.jpg')`;
+  let url = `url('assets/images/${firstName}.jpg'), url('assets/images/${person.deathEater}.jpg'), url('assets/images/${person.house}.jpg'), url('assets/images/${person.bloodStatus}.jpg'), url('assets/images/default.jpg')`;
   cardPhotoEl.setAttribute('style', `background-image: ${url}`);
 
   resultSectionEl.appendChild(cardEl);
